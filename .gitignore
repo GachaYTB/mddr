@@ -1,2 +1,4 @@
 /target
-/built_mddr
+/test zone/*
+!/test zone/a place to test spwn code
+MDDR.zip
