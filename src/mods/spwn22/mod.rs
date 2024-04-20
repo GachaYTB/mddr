@@ -108,7 +108,7 @@ fn modfeature2() -> Result<(), Box<dyn std::error::Error>> {
 
 pub fn init() -> io::Result<()> {
     println!("SPWN 2.2");
-    println!("1. Upgrade group limit");
+    println!("1. Upgrade group limit (old spwn versions (<0.8) only)");
     println!("2. Add end trigger");
     println!("3. All above this");
     println!("4. Exit");
