@@ -1,6 +1,0 @@
-on: push
-jobs:
-  build-exe:
-    runs-on: windows-latest
-    steps:
-      - run: dir
