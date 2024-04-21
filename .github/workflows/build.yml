@@ -2,7 +2,7 @@ on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
-    container: rust:1.75.0
+    container: rust:1.75
     steps:
       - run: rustc -V
       - run: cargo version
