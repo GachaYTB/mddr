@@ -1,8 +1,6 @@
 on: push
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    container: rust:1.75
+  build-exe:
+    runs-on: windows-latest
     steps:
-      - run: rustc -V
-      - run: cargo version
+      - run: cargo build
