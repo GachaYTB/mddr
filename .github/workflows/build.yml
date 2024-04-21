@@ -3,4 +3,4 @@ jobs:
   build-exe:
     runs-on: windows-latest
     steps:
-      - run: cargo build
+      - run: dir
