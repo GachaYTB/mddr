@@ -2,6 +2,7 @@ on: push
 jobs:
   first-job:
     runs-on: windows-latest
+    container: rust:1.75.0
     steps:
       - run: rustc -V
       - run: cargo version
