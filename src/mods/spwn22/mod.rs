@@ -103,7 +103,6 @@ fn modfeature2() -> Result<(), Box<dyn std::error::Error>> {
         Err(Box::new(std::io::Error::new(std::io::ErrorKind::NotFound, "general_triggers.spwn not found")))
     }
 }
-
 // End of Mod Features
 
 pub fn init() -> io::Result<()> {
