@@ -2,7 +2,7 @@ import os, sys, platform
 import moddriver
 
 VERSION = "v0.1.0"
-spwnexepath = f"{os.getenv("HOME")}/Desktop/spwn/spwn"
+spwnexepath = f"{os.getenv("USERPROFILE") if os.name == 'nt' else os.getenv("HOME")}/Desktop/spwn/spwn"
 spwnver = "0.0.8"
 operatingsystem = ""
 # this looks bad, really bad.
@@ -50,7 +50,7 @@ def menu():
             menu()
         else:
             clearcmd()
-            moddriver.runpatch(os.listdir(f"{os.getenv("HOME")}/mddr/patches")[int(modid)-1], spwnexepath)
+            moddriver.runpatch(os.listdir(f"{os.getenv("USERPROFILE") if os.name == 'nt' else os.getenv("HOME")}/mddr/patches")[int(modid)-1], spwnexepath)
             print("Press enter to go back to the menu", end="\r")
             input()
             clearcmd()
@@ -83,10 +83,10 @@ def menu():
     elif choice == "5":
         clearcmd()
         print(f"MDDR {VERSION}\n")
-        print("© 2024 - 2025")
+        print("© 2024 - 2026")
         print("Credits:")
         print("Developer: 3pm")
-        print("\nnote from 3pm: do not use this tool while drunk\n")
+        print("\nnote from 3pm: you can use this tool while drunk\n")
         print("█████████████████")
         print("██             ██")
         print("██   ██   ██   ██")
